@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .menu {
+            width: 200px;
+            height: 100vh;
+            background-color: #263859;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 30px;
+        }
+
+        .menu h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .menu a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .menu a:hover {
+            background-color: #526da8;
+        }
+
+        .contenido {
+            margin-left: 220px;
+            padding: 30px;
+        }
+
+        .pagina {
+            display: none;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #cccccc;
+        }
+
+        .pagina:target {
+            display: block;
+        }
+
+        #inicio {
+            display: block;
+        }
+
+        .pagina:target ~ #inicio {
+            display: none;
+        }
+
+        h1 {
+            color: #263859;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .imagen {
+            font-size: 55px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu">
+        <h2>Mi Sitio</h2>
+
+        <a href="#proyecto">📁 Proyecto</a>
+        <a href="#desarrollo">💻 Desarrollo</a>
+        <a href="#rol">👥 Rol</a>
+    </div>
+
+    <div class="contenido">
+
+        <section class="pagina" id="proyecto">
+            <h1>Mi Proyecto</h1>
+            <div class="imagen">📁</div>
+            <p>
+                Un proyecto es una idea que queremos realizar
+                para alcanzar un objetivo.
+            </p>
+            <p>
+                Para lograrlo, necesitamos organización,
+                creatividad y esfuerzo.
+            </p>
+        </section>
+
+        <section class="pagina" id="desarrollo">
+            <h1>Desarrollo</h1>
+            <div class="imagen">💻</div>
+            <p>
+                El desarrollo consiste en trabajar paso a paso
+                para hacer realidad nuestro proyecto.
+            </p>
+            <p>
+                Primero planificamos, después realizamos las
+                actividades y finalmente revisamos los resultados.
+            </p>
+        </section>
+
+        <section class="pagina" id="rol">
+            <h1>Rol del equipo</h1>
+            <div class="imagen">👥</div>
+            <p>
+                mauti            </p>
+            <p>
+                Algunos organizan, otros diseñan y otros
+                realizan las tareas necesarias para alcanzar
+                el objetivo.
+            </p>
+        </section>
+
+        <section class="pagina" id="inicio">
+            <h1>¡Bienvenido!</h1>
+            <div class="imagen">🌟</div>
+            <p>
+                Bienvenido a nuestro sitio web.
+                Selecciona una opción del menú de la izquierda
+                para conocer el proyecto, su desarrollo y los roles.
+            </p>
+        </section>
+
+    </div>
+
+</body>
+</html>
