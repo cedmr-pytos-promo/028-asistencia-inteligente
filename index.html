@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto</title>
+    <title>Asistencia Inteligente - Sitio de Seguimiento</title>
 
     <style>
         body {
@@ -13,26 +13,31 @@
         }
 
         .menu {
-            width: 200px;
+            width: 230px;
             height: 100vh;
             background-color: #263859;
             position: fixed;
             top: 0;
             left: 0;
-            padding-top: 30px;
+            padding-top: 20px;
+            overflow-y: auto;
         }
 
         .menu h2 {
             color: white;
             text-align: center;
+            font-size: 1.1rem;
+            padding: 0 10px;
+            margin-bottom: 20px;
         }
 
         .menu a {
             display: block;
             color: white;
-            padding: 15px;
+            padding: 10px 15px;
             text-decoration: none;
-            margin-top: 10px;
+            margin-top: 2px;
+            font-size: 13px;
         }
 
         .menu a:hover {
@@ -40,7 +45,7 @@
         }
 
         .contenido {
-            margin-left: 220px;
+            margin-left: 250px;
             padding: 30px;
         }
 
@@ -50,6 +55,7 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 3px 10px #cccccc;
+            margin-bottom: 30px;
         }
 
         .pagina:target {
@@ -66,16 +72,63 @@
 
         h1 {
             color: #263859;
+            border-bottom: 2px solid #263859;
+            padding-bottom: 8px;
+            margin-top: 0;
         }
 
-        p {
-            font-size: 18px;
+        h2 {
+            color: #3b5284;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        p, li {
+            font-size: 15px;
             line-height: 1.6;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-left: 20px;
         }
 
         .imagen {
-            font-size: 55px;
-            margin-top: 20px;
+            font-size: 45px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #dddddd;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        th {
+            background-color: #263859;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .slogan {
+            font-style: italic;
+            color: #526da8;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -83,60 +136,278 @@
 <body>
 
     <div class="menu">
-        <h2>Mi Sitio</h2>
+        <h2>Asistencia Inteligente</h2>
 
-        <a href="#proyecto">📁 Proyecto</a>
-        <a href="#desarrollo">💻 Desarrollo</a>
-        <a href="#rol">👥 Rol</a>
+        <a href="#inicio">🏠 Inicio</a>
+        <a href="#acerca">ℹ️ Acerca del Proyecto</a>
+        <a href="#objetivos">🎯 Objetivos</a>
+        <a href="#funcionalidades">⚙️ Funcionalidades</a>
+        <a href="#viabilidad">📊 Viabilidad</a>
+        <a href="#equipo">👥 Equipo y Roles</a>
+        <a href="#cronograma">📅 Cronograma</a>
+        <a href="#presentacion">🖥️ Presentación</a>
+        <a href="#ia">🤖 Uso de IA</a>
+        <a href="#conclusiones">💡 Conclusiones</a>
+        <a href="#referencias">📚 Referencias</a>
+        <a href="#anexos">📎 Anexos y Rúbrica</a>
     </div>
 
     <div class="contenido">
 
-        <section class="pagina" id="proyecto">
-            <h1>Mi Proyecto</h1>
-            <div class="imagen">📁</div>
+        <!-- SECCIÓN: ACERCA DEL PROYECTO -->
+        <section class="pagina" id="acerca">
+            <h1>Acerca del Proyecto</h1>
+            <div class="imagen">ℹ️</div>
+            <h2>Presentación</h2>
             <p>
-                Un proyecto es una idea que queremos realizar
-                para alcanzar un objetivo.
+                El presente anteproyecto corresponde a la primera etapa del Proyecto de Promoción del equipo de 1.° BATIN, denominado <strong>Asistencia Inteligente</strong>.
             </p>
             <p>
-                Para lograrlo, necesitamos organización,
-                creatividad y esfuerzo.
+                El desarrollo del proyecto se realizará progresivamente durante los tres años del bachillerato. En primer año se llevará a cabo el análisis, la planificación y la validación de la propuesta; en segundo año se desarrollará un primer prototipo funcional; y en tercer año se implementará un sistema de escritorio más completo con almacenamiento de datos y funcionalidades administrativas.
+            </p>
+
+            <h2>Definición del Problema</h2>
+            <p>
+                El proyecto surge a partir de la necesidad de mejorar los métodos tradicionales de registro y control de asistencia utilizados en las instituciones educativas. Cuando este procedimiento se realiza manualmente, se ocasionan inconvenientes como:
+            </p>
+            <ul>
+                <li>Pérdida de tiempo durante el registro</li>
+                <li>Errores al marcar la asistencia</li>
+                <li>Dificultad para consultar registros anteriores o historiales</li>
+                <li>Complicaciones para controlar las llegadas tardías</li>
+                <li>Demoras en la elaboración de informes y reportes</li>
+                <li>Falta de centralización de la información</li>
+            </ul>
+
+            <h2>Propuesta de Solución</h2>
+            <p>
+                El equipo propone desarrollar un sistema informático que permita digitalizar, agilizar y optimizar el proceso de registro, control y seguimiento de la asistencia de los estudiantes mediante herramientas tecnológicas que faciliten la gestión de información.
             </p>
         </section>
 
-        <section class="pagina" id="desarrollo">
-            <h1>Desarrollo</h1>
-            <div class="imagen">💻</div>
+        <!-- SECCIÓN: OBJETIVOS -->
+        <section class="pagina" id="objetivos">
+            <h1>Objetivos del Proyecto</h1>
+            <div class="imagen">🎯</div>
+            <h2>Objetivo General</h2>
             <p>
-                El desarrollo consiste en trabajar paso a paso
-                para hacer realidad nuestro proyecto.
+                Diseñar y desarrollar un sistema informático denominado <strong>Asistencia Inteligente</strong> que permita digitalizar, agilizar y optimizar el registro, control y seguimiento de la asistencia de estudiantes en instituciones educativas, mediante herramientas tecnológicas que faciliten la gestión de información.
             </p>
-            <p>
-                Primero planificamos, después realizamos las
-                actividades y finalmente revisamos los resultados.
+
+            <h2>Objetivos Específicos</h2>
+            <ul>
+                <li>Identificar las dificultades presentes en los métodos tradicionales de registro de asistencia.</li>
+                <li>Analizar las necesidades de docentes, estudiantes y administradores respecto al control de asistencia.</li>
+                <li>Diseñar una propuesta tecnológica que permita mejorar el registro y seguimiento de los estudiantes.</li>
+                <li>Incorporar un sistema de identificación mediante códigos QR</li>
+                <li>Permitir el registro de estudiantes presentes, ausentes y llegadas tardías</li>
+                <li>Facilitar la consulta de historiales individuales de asistencia</li>
+                <li>Implementar herramientas para generar reportes y estadísticas </li>
+                <li>Desarrollar progresivamente los conocimientos técnicos necesarios para construir el sistema</li>
+                <li>Publicar un sitio web que documente la evolución del proyecto durante los tres años.</li>
+                <li>Evaluar la viabilidad técnica, legal y económica de la propuesta
+                Viabilidad favorable con costos iniciales mínimos al emplear recursos institucionales y software gratuito (GitHub Pages, VS Code, Python, Java).
             </p>
         </section>
 
-        <section class="pagina" id="rol">
-            <h1>Rol del equipo</h1>
+        <!-- SECCIÓN: EQUIPO Y ROLES -->
+        <section class="pagina" id="equipo">
+            <h1>Metodología y Distribución de Roles</h1>
             <div class="imagen">👥</div>
             <p>
-                mauti            </p>
+                Trabajo colaborativo mediante Google Drive y tablero de tareas de tres estados (Por hacer, En proceso, Terminado).
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rol</th>
+                        <th>Responsabilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Coordinación</strong></td>
+                        <td>Organizar las actividades y supervisar los avances.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Redacción</strong></td>
+                        <td>Elaborar y revisar el anteproyecto</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diseño Web</strong></td>
+                        <td>Diseñar y desarrollar el sitio de seguimiento.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Presentación y QR</strong></td>
+                        <td>Preparar las diapositivas y generar el código QR.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECCIÓN: CRONOGRAMA -->
+        <section class="pagina" id="cronograma">
+            <h1>Cronograma de Trabajo</h1>
+            <div class="imagen">📅</div>
+
+            <h2>Cronograma Detallado - Primera Etapa (1.° Año)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Mes</th>
+                        <th>Responsable</th>
+                        <th>Entregable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Definición del tema</td><td>Julio</td><td>Todo el equipo</td><td>Tema aprobado</td></tr>
+                    <tr><td>Identificación del problema</td><td>Julio</td><td>Todo el equipo</td><td>Problema definido</td></tr>
+                    <tr><td>Consulta a la comunidad educativa</td><td>Julio-Agosto</td><td>Coordinación</td><td>Resultados de consulta</td></tr>
+                    <tr><td>Estudio de viabilidad</td><td>Julio-Agosto</td><td>Todo el equipo</td><td>Estudio documentado</td></tr>
+                    <tr><td>Redacción del anteproyecto</td><td>Agosto</td><td>Redacción</td><td>Documento completo</td></tr>
+                    <tr><td>Diseño del sitio web</td><td>Agosto</td><td>Diseño web</td><td>Diseño inicial</td></tr>
+                    <tr><td>Desarrollo del sitio web</td><td>Agosto-Septiembre</td><td>Diseño web</td><td>Sitio navegable</td></tr>
+                    <tr><td>Publicación en GitHub Pages</td><td>Septiembre</td><td>Diseño web</td><td>Sitio publicado</td></tr>
+                    <tr><td>Generación del código QR</td><td>Septiembre</td><td>Presentación y QR</td><td>Código QR funcional</td></tr>
+                    <tr><td>Elaboración de diapositivas</td><td>Septiembre</td><td>Todo el equipo</td><td>Presentación terminada</td></tr>
+                    <tr><td>Revisión final</td><td>Septiembre</td><td>Todo el equipo</td><td>Productos revisados</td></tr>
+                    <tr><td>Lanzamiento en ICIENTEC</td><td>Septiembre</td><td>Todo el equipo</td><td>Presentación del proyecto</td></tr>
+                </tbody>
+            </table>
+
+            <h2>Cronograma Extendido (3 Años)</h2>
+            <ul>
+                <li><strong>1.° año (Análisis y validación):</strong> Identificación del problema, encuestas, viabilidad, anteproyecto y sitio web.</li>
+                <li><strong>2.° año (Diseño y desarrollo):</strong> Prototipo educativo en Python y Pygame Zero</li>
+                <li><strong>3.° año (Implementación y evaluación):</strong> Sistema de escritorio con Java, Swing y SQLite mediante JDBC.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: PRESENTACIÓN DE LANZAMIENTO -->
+        <section class="pagina" id="presentacion">
+            <h1>Presentación de Lanzamiento</h1>
+            <div class="imagen">🖥️</div>
             <p>
-                Algunos organizan, otros diseñan y otros
-                realizan las tareas necesarias para alcanzar
-                el objetivo.
+                La presentación se elaborará mediante PowerPoint o herramienta equivalente, estructurada en un máximo de 8 diapositivas para el evento ICIENTEC:
+            </p>
+            <ol>
+                <li><strong>Portada:</strong> Nombre del proyecto, institución e integrantes</li>
+                <li><strong>Problema:</strong> Dificultades del registro manual de asistencia.</li>
+                <li><strong>Propuesta:</strong> Explicación de Asistencia Inteligente</li>
+                <li><strong>Funcionalidades:</strong> QR, registros, historial y reportes</li>
+                <li><strong>Usuarios:</strong> Docentes, estudiantes y administradores</li>
+                <li><strong>Viabilidad:</strong> Técnica, legal y económica.</li>
+                <li><strong>Cronograma:</strong> Desarrollo durante los tres años.</li>
+                <li><strong>Código QR:</strong> Acceso al sitio web y cierre</li>
+            </ol>
+        </section>
+
+        <!-- SECCIÓN: USO DE INTELIGENCIA ARTIFICIAL -->
+        <section class="pagina" id="ia">
+            <h1>Declaración de Uso de Inteligencia Artificial</h1>
+            <div class="imagen">🤖</div>
+            <p>
+                Durante la elaboración del anteproyecto, el equipo utilizó ChatGPT como herramienta de apoyo para organizar la información, mejorar la redacción, estructurar secciones y proponer ideas del sistema.
+            </p>
+            <p>
+                El contenido generado fue utilizado como material de orientación, siendo revisado, corregido y validado por los integrantes. La IA no sustituye el trabajo del equipo ni la comprensión de los contenidos técnicos.
+            </p>
+            <h2>Buenas Prácticas Aplicadas</h2>
+            <ul>
+                <li>No introducir información personal o sensible en herramientas de IA.</li>
+                <li>Revisar la exactitud de la información generada.</li>
+                <li>Comprender los fragmentos de código antes de utilizarlos.</li>
+                <li>Verificar las referencias bibliográficas.</li>
+                <li>No presentar como realizados trabajos pendientes.</li>
+                <li>Identificar las partes del proyecto donde se utilizó asistencia de IA.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: CONCLUSIONES -->
+        <section class="pagina" id="conclusiones">
+            <h1>Conclusiones Preliminares</h1>
+            <div class="imagen">💡</div>
+            <p>
+                El equipo establece las bases para el desarrollo de Asistencia Inteligente, una propuesta tecnológica orientada a mejorar el registro, control y seguimiento de la asistencia estudiantil.
+            </p>
+            <p>
+                La planificación en tres etapas permitirá desarrollar el proyecto progresivamente, aprovechando los conocimientos adquiridos durante el bachillerato y evitando comprometerse con funcionalidades que superen los recursos disponibles.
+            </p>
+            <p>
+                En conclusión, el proyecto representa una oportunidad para aplicar la tecnología a una necesidad del entorno educativo, promoviendo la innovación, el trabajo colaborativo y el aprendizaje basado en proyectos.
             </p>
         </section>
 
+        <!-- SECCIÓN: REFERENCIAS -->
+        <section class="pagina" id="referencias">
+            <h1>Referencias Bibliográficas</h1>
+            <div class="imagen">📚</div>
+            <ul>
+                <li>Anderson, D. J. (2010). <em>Kanban: Successful Evolutionary Change for Your Technology Business</em>. Blue Hole Press.</li>
+                <li>Barrett, H. C. (2007). Researching electronic portfolios and learner engagement: The REFLECT initiative. <em>Journal of Adolescent & Adult Literacy</em>, 50(6), 436–449.</li>
+                <li>Brown, T. (2008). Design thinking. <em>Harvard Business Review</em>, 86(6), 84–92.</li>
+                <li>Clegg, D., & Barker, R. (1994). <em>Case Method Fast-Track: A RAD Approach</em>. Addison-Wesley.</li>
+                <li>Krajcik, J. S., & Blumenfeld, P. C. (2006). Project-based learning. En R. K. Sawyer (Ed.), <em>The Cambridge Handbook of the Learning Sciences</em> (pp. 317–334). Cambridge University Press.</li>
+                <li>Krug, S. (2014). <em>Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability</em> (3.ª ed.). New Riders.</li>
+                <li>Nielsen, J. (2012). <em>Usability 101: Introduction to usability</em>. Nielsen Norman Group.</li>
+                <li>PBLWorks / Buck Institute for Education. (2021). <em>Gold Standard PBL: Essential Project Design Elements</em>.</li>
+                <li>Pressman, R. S., & Maxim, B. R. (2020). <em>Ingeniería del software: Un enfoque práctico</em> (8.ª ed.). McGraw-Hill.</li>
+                <li>Project Management Institute. (2021). <em>A Guide to the Project Management Body of Knowledge (PMBOK Guide)</em> (7.ª ed.).</li>
+                <li>Sapag Chain, N., Sapag Chain, R., & Sapag Puelma, J. M. (2014). <em>Preparación y evaluación de proyectos</em> (6.ª ed.). McGraw-Hill.</li>
+                <li>St. Laurent, A. M. (2004). <em>Understanding Open Source and Free Software Licensing</em>. O'Reilly Media.</li>
+                <li>UNESCO. (2023). <em>Guidance for Generative AI in Education and Research</em>.</li>
+                <li>Wiegers, K. E., & Beatty, J. (2013). <em>Software Requirements</em> (3.ª ed.). Microsoft Press.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: ANEXOS Y RÚBRICA -->
+        <section class="pagina" id="anexos">
+            <h1>Anexos y Evaluación</h1>
+            <div class="imagen">📎</div>
+
+            <h2>Bitácora de Uso de IA</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N.°</th>
+                        <th>Herramienta</th>
+                        <th>Uso Realizado</th>
+                        <th>Revisión del Equipo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>ChatGPT</td><td>Organización de la estructura del anteproyecto</td><td>Pendiente de validación</td></tr>
+                    <tr><td>2</td><td>ChatGPT</td><td>Propuestas de redacción para las secciones</td><td>Pendiente de validación</td></tr>
+                    <tr><td>3</td><td>ChatGPT</td><td>Organización de funcionalidades y cronograma</td><td>Pendiente de validación</td></tr>
+                </tbody>
+            </table>
+
+            <h2>Evidencias Complementarias Previstas</h2>
+            <ul>
+                <li>Fotografías o capturas del proceso de trabajo.</li>
+                <li>Resultados de las encuestas realizadas.</li>
+                <li>Bocetos de la identidad visual.</li>
+                <li>Capturas del sitio web y enlace al repositorio.</li>
+                <li>Código QR de acceso al sitio.</li>
+                <li>Capturas de la presentación de lanzamiento.</li>
+            </ul>
+        </section>
+
+        <!-- SECCIÓN: INICIO (PÁGINA PRINCIPAL) -->
         <section class="pagina" id="inicio">
-            <h1>¡Bienvenido!</h1>
+            <h1>¡Bienvenido a Asistencia Inteligente!</h1>
             <div class="imagen">🌟</div>
+            <p class="slogan">Control eficiente, asistencia inteligente.</p>
             <p>
-                Bienvenido a nuestro sitio web.
-                Selecciona una opción del menú de la izquierda
-                para conocer el proyecto, su desarrollo y los roles.
+                <strong>Estado actual:</strong> Etapa 1 de 3 – Anteproyecto.
+            </p>
+            <p>
+                Este sitio web es la plataforma informativa oficial destinada a documentar y transparentar el desarrollo del proyecto <strong>Asistencia Inteligente</strong> durante los tres años de educación media en 1.° BATIN.
+            </p>
+            <p>
+                Explora las distintas secciones a través del menú lateral para conocer todos los aspectos técnicos, legales, la viabilidad, el cronograma y la declaración sobre el uso de tecnologías en nuestro proyecto.
             </p>
         </section>
 
